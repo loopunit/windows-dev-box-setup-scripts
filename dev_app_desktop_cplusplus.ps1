@@ -29,19 +29,18 @@ executeScript "CommonDevTools.ps1";
 
 #--- Tools ---
 #--- Installing VS and VS Code with Git
-# See this for install args: https://chocolatey.org/packages/VisualStudio2017Community
-# https://docs.microsoft.com/en-us/visualstudio/install/workload-component-id-vs-community
-# https://docs.microsoft.com/en-us/visualstudio/install/use-command-line-parameters-to-install-visual-studio#list-of-workload-ids-and-component-ids
-# visualstudio2017community
-# visualstudio2017professional
-# visualstudio2017enterprise
+# See this for install args: https://chocolatey.org/packages/VisualStudio2022Community
 
-choco install -y visualstudio2017community --package-parameters="'--add Microsoft.VisualStudio.Component.Git'"
-Update-SessionEnvironment #refreshing env due to Git install
+choco install -y git
+choco install -y cmake
 
-#--- UWP Workload and installing Windows Template Studio ---
-choco install -y visualstudio2017-workload-azure
-choco install -y visualstudio2017-workload-nativedesktop
+Update-SessionEnvironment
+
+choco install -y visualstudio2022community
+choco install -y visualstudio2022-workload-nativedesktop
+choco install -y visualstudio2022-workload-nativegame
+choco install -y visualstudio2022-workload-vctools
+
 
 #--- reenabling critial items ---
 Enable-UAC

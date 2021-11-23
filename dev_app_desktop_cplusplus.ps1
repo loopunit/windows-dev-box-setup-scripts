@@ -26,6 +26,8 @@ executeScript "SystemConfiguration.ps1";
 executeScript "FileExplorerSettings.ps1";
 executeScript "RemoveDefaultApps.ps1";
 executeScript "CommonDevTools.ps1";
+executeScript "sophia/Sophia.ps1";
+executeScript "NamePCAndJoinDomain.ps1";
 
 #--- Tools ---
 #--- Installing VS and VS Code with Git
@@ -36,10 +38,10 @@ choco install -y cmake
 
 Update-SessionEnvironment
 
-choco install -y visualstudio2022community
-choco install -y visualstudio2022-workload-nativedesktop
-choco install -y visualstudio2022-workload-nativegame
-choco install -y visualstudio2022-workload-vctools
+#choco install -y visualstudio2022community
+#choco install -y visualstudio2022-workload-nativedesktop
+#choco install -y visualstudio2022-workload-nativegame
+#choco install -y visualstudio2022-workload-vctools
 
 
 #--- reenabling critial items ---

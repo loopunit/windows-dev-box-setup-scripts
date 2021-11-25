@@ -41,6 +41,7 @@ Update-SessionEnvironment
 #choco install -y visualstudio2022-workload-nativedesktop
 #choco install -y visualstudio2022-workload-nativegame
 #choco install -y visualstudio2022-workload-vctools
+#choco install visualstudio2022-workload-nativecrossplat
 
 
 #--- reenabling critial items ---
